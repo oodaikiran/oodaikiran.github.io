@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uday Kiran Ayyagari | AI Transformation Leader</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">🌙</div>
+    
+    <!-- PDF Export Button -->
+    <button class="export-button glass-card" id="exportPdf">
+        📄 Export PDF
+    </button>
+    
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-brand">UK</div>
+        <div class="nav-links">
+            <a href="#executive" class="nav-link">Executive Profile</a>
+            <a href="#impact" class="nav-link">Business Impact</a>
+            <a href="#projects" class="nav-link">AI Portfolio</a>
+            <a href="#journey" class="nav-link">Journey</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- 3D Animated Logos -->
+            <div class="floating-logos-3d">
+                <div class="logo-orb-3d" data-company="bunge">Bunge</div>
+                <div class="logo-orb-3d" data-company="highradius">HRC</div>
+                <div class="logo-orb-3d" data-company="cognizant">CTS</div>
+                <div class="logo-orb-3d" data-company="genpact">Genpact</div>
+                <div class="logo-orb-3d" data-company="hsbc">HSBC</div>
+                <div class="logo-orb-3d" data-company="capgemini">Capgemini</div>
+                <div class="logo-orb-3d" data-company="dell">Dell</div>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="title-main">Uday Kiran Ayyagari</span>
+                <span class="title-sub">AI & Autonomous Finance Leader</span>
+            </h1>
+            
+            <div class="executive-metrics">
+                <div class="metric-card">
+                    <div class="metric-value" data-target="240">0</div>
+                    <div class="metric-label">$M Business Impact</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" data-target="150">0</div>
+                    <div class="metric-label">AI Solutions</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" data-target="500">0</div>
+                    <div class="metric-label">Team Leadership</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Summary Section -->
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-summary glass-card">
+                <h2>Executive Profile</h2>
+                <p>Visionary AI and Finance Transformation Leader with <strong>20+ years</strong> of experience architecting and executing enterprise-wide digital strategies for leading multinational corporations. Proven track record of delivering multimillion-dollar P&L impact by pioneering autonomous finance ecosystems.</p>
+                <p>Expert in translating complex business challenges into scalable, AI-driven solutions that drive operational excellence, unlock revenue streams, and secure competitive advantage.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>oodaikiran@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>+91 8886 99 0088</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Mohali, Punjab, India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Dashboard -->
+    <section id="executive" class="dashboard-section">
+        <h2 class="section-title">Leadership Excellence</h2>
+        
+        <div class="dashboard-grid">
+            <div class="dashboard-card glass-card">
+                <div class="card-icon">🚀</div>
+                <h3>AI Transformation Strategy</h3>
+                <p>Architected enterprise-wide intelligent automation strategy delivering ~20% operational cost reduction</p>
+                <div class="skill-meter">
+                    <div class="skill-progress" data-skill="95"></div>
+                </div>
+            </div>
+            
+            <div class="dashboard-card glass-card">
+                <div class="card-icon">🌍</div>
+                <h3>Global Program Leadership</h3>
+                <p>Directed 30+ concurrent transformation initiatives across NA, SA, EMEA</p>
+                <div class="skill-meter">
+                    <div class="skill-progress" data-skill="98"></div>
+                </div>
+            </div>
+            
+            <div class="dashboard-card glass-card">
+                <div class="card-icon">👥</div>
+                <h3>Team Leadership</h3>
+                <p>Led and mentored cross-functional teams of 500+ professionals</p>
+                <div class="skill-meter">
+                    <div class="skill-progress" data-skill="96"></div>
+                </div>
+            </div>
+
+            <div class="dashboard-card glass-card">
+                <div class="card-icon">📊</div>
+                <h3>Digital Transformation</h3>
+                <p>Pioneered autonomous finance ecosystems with 50x ROI on automation investments</p>
+                <div class="skill-meter">
+                    <div class="skill-progress" data-skill="94"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Project Matrix -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">AI Innovation Portfolio</h2>
+        <p class="section-subtitle">Key initiatives showcasing transformative AI solutions across finance and operations</p>
+        
+        <div class="project-matrix" id="projectMatrix">
+            <!-- Projects loaded dynamically -->
+        </div>
+    </section>
+
+    <!-- Journey Roadmap -->
+    <section id="journey" class="journey-section">
+        <h2 class="section-title">Professional Journey</h2>
+        <p class="section-subtitle">A 20+ year roadmap of digital transformation leadership</p>
+        
+        <div class="roadmap-container">
+            <div class="roadmap-line"></div>
+            
+            <div class="roadmap-item">
+                <div class="roadmap-year">2023 - Present</div>
+                <div class="roadmap-content glass-card">
+                    <div class="company-logo bunge">Bunge</div>
+                    <h3>AI & Transformation Lead</h3>
+                    <p>Leading Intelligent Automation for 500+ member GBS organization. Delivered $1.5M+ AI projects with 25x productivity improvements.</p>
+                    <div class="achievement-tag">$1.5M AI Value</div>
+                </div>
+            </div>
+            
+            <div class="roadmap-item">
+                <div class="roadmap-year">2021 - 2023</div>
+                <div class="roadmap-content glass-card">
+                    <div class="company-logo highradius">HighRadius</div>
+                    <h3>Senior Manager</h3>
+                    <p>Managed $10M+ portfolio of Fortune 500 clients, driving autonomous receivables transformation and exceeding targets by 15%.</p>
+                    <div class="achievement-tag">98% Retention</div>
+                </div>
+            </div>
+            
+            <div class="roadmap-item">
+                <div class="roadmap-year">2021</div>
+                <div class="roadmap-content glass-card">
+                    <div class="company-logo genpact">Genpact</div>
+                    <h3>Senior Manager</h3>
+                    <p>Directed procurement transformation programs, improving KPI metrics by 5% and increasing NPS by 10 points.</p>
+                    <div class="achievement-tag">5% KPI Boost</div>
+                </div>
+            </div>
+            
+            <div class="roadmap-item">
+                <div class="roadmap-year">2016 - 2021</div>
+                <div class="roadmap-content glass-card">
+                    <div class="company-logo cognizant">Cognizant</div>
+                    <h3>Manager - Intelligent Automation</h3>
+                    <p>Delivered $240M+ business impact through 100+ automation solutions, achieving 50x ROI across client portfolio.</p>
+                    <div class="achievement-tag">$240M Impact</div>
+                </div>
+            </div>
+            
+            <div class="roadmap-item">
+                <div class="roadmap-year">2014 - 2016</div>
+                <div class="roadmap-content glass-card">
+                    <div class="company-logo cognizant">Cognizant</div>
+                    <h3>Team Manager</h3>
+                    <p>Delivered $11M business impact in first year by championing automation adoption and process excellence.</p>
+                    <div class="achievement-tag">$11M Impact</div>
+                </div>
+            </div>
+            
+            <div class="roadmap-item">
+                <div class="roadmap-year">2011 - 2014</div>
+                <div class="roadmap-content glass-card">
+                    <div class="company-logo hsbc">HSBC</div>
+                    <h3>Assistant Manager</h3>
+                    <p>Key role in UK-led Global Finance Change Programme, contributing to large-scale PeopleSoft GL implementation.</p>
+                    <div class="achievement-tag">Global Program</div>
+                </div>
+            </div>
+            
+            <div class="roadmap-item">
+                <div class="roadmap-year">2009 - 2011</div>
+                <div class="roadmap-content glass-card">
+                    <div class="company-logo capgemini">Capgemini</div>
+                    <h3>Team Lead</h3>
+                    <p>Generated $1M+ efficiency gains through automation and operationalized global Command Centre concept.</p>
+                    <div class="achievement-tag">$1M+ Savings</div>
+                </div>
+            </div>
+            
+            <div class="roadmap-item">
+                <div class="roadmap-year">2007 - 2009</div>
+                <div class="roadmap-content glass-card">
+                    <div class="company-logo capgemini">Capgemini</div>
+                    <h3>Process Owner</h3>
+                    <p>Automated complete intercompany transaction process and delivered FTE gains through automation.</p>
+                    <div class="achievement-tag">Process Automation</div>
+                </div>
+            </div>
+            
+            <div class="roadmap-item">
+                <div class="roadmap-year">2005 - 2007</div>
+                <div class="roadmap-content glass-card">
+                    <div class="company-logo dell">Dell</div>
+                    <h3>Team Lead</h3>
+                    <p>Automated ACH Process reducing 5 FTE and successfully transitioned processes from US to India.</p>
+                    <div class="achievement-tag">5 FTE Savings</div>
+                </div>
+            </div>
+            
+            <div class="roadmap-item">
+                <div class="roadmap-year">2001 - 2005</div>
+                <div class="roadmap-content glass-card">
+                    <div class="company-logo asci">ASCI</div>
+                    <h3>Project Associate</h3>
+                    <p>Urban development projects with World Bank Institute recognition for strengthening urban management.</p>
+                    <div class="achievement-tag">World Bank</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Let's Connect</h2>
+        
+        <div class="contact-grid">
+            <div class="contact-card glass-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email</h3>
+                <p>oodaikiran@gmail.com</p>
+                <a href="mailto:oodaikiran@gmail.com" class="contact-link">Send Message</a>
+            </div>
+            
+            <div class="contact-card glass-card">
+                <div class="contact-icon">📱</div>
+                <h3>Phone</h3>
+                <p>+91 8886 99 0088</p>
+                <a href="tel:+918886990088" class="contact-link">Call Now</a>
+            </div>
+            
+            <div class="contact-card glass-card">
+                <div class="contact-icon">📍</div>
+                <h3>Location</h3>
+                <p>Mohali, Punjab, India</p>
+                <p class="contact-note">Open to Global Opportunities</p>
+            </div>
+            
+            <div class="contact-card glass-card">
+                <div class="contact-icon">💼</div>
+                <h3>LinkedIn</h3>
+                <p>Connect Professionally</p>
+                <a href="#" class="contact-link">View Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Assistant Widget -->
+    <div class="ai-assistant-widget">
+        <div class="ai-toggle">Ask AI</div>
+        <div class="ai-chat-interface">
+            <div class="chat-header">AI Portfolio Assistant</div>
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Ask about my experience...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
