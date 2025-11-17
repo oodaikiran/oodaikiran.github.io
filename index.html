@@ -292,8 +292,21 @@
             </div>
         </div>
     </section>
-
-    <!-- AI Assistant Widget -->
+	
+<!-- Add this in the contact section or as a tooltip -->
+<div class="pdf-instructions no-print" style="display: none; position: fixed; bottom: 100px; left: 2rem; background: var(--glass); padding: 1rem; border-radius: 10px; border: 1px solid var(--glass-border); max-width: 300px; z-index: 1000;">
+    <h4>📄 PDF Instructions:</h4>
+    <ol style="margin-left: 1rem; font-size: 0.9rem;">
+        <li>Click "Export PDF" button</li>
+        <li>New tab opens with print-optimized resume</li>
+        <li>Press <strong>Ctrl+P</strong> (Windows) or <strong>Cmd+P</strong> (Mac)</li>
+        <li>Choose "Save as PDF" as destination</li>
+        <li>Click "Save"</li>
+    </ol>
+    <button onclick="this.parentElement.style.display='none'" style="margin-top: 0.5rem; background: var(--primary); color: white; border: none; padding: 0.3rem 0.8rem; border-radius: 5px; cursor: pointer;">Got it!</button>
+</div>
+	
+	<!-- AI Assistant Widget -->
     <div class="ai-assistant-widget">
         <div class="ai-toggle">Ask AI</div>
         <div class="ai-chat-interface">

@@ -334,40 +334,49 @@ function initializePDFExport() {
     const exportButton = document.getElementById('exportPdf');
     
     exportButton.addEventListener('click', function() {
-        // Create a simple PDF version URL
-        const pdfUrl = 'https://aquamarine-seahorse-9b8802.netlify.app/resume.html';
+        // Open the PDF version in new tab
+        window.open('./resume.html', '_blank');
         
-        // Open in new tab for printing
-        window.open(pdfUrl, '_blank');
-        
-        // Optional: Show download message
-        const message = document.createElement('div');
-        message.style.cssText = `
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: var(--glass);
-            backdrop-filter: blur(20px);
-            padding: 1.5rem 2rem;
-            border-radius: 15px;
-            border: 1px solid var(--glass-border);
-            z-index: 10000;
-            font-weight: 600;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        `;
-        message.innerHTML = `
-            <div>📄 PDF Resume Opened</div>
-            <div style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">Use browser print (Ctrl+P) to save as PDF</div>
-        `;
-        
-        document.body.appendChild(message);
-        
+        // Show success message
+        showPDFMessage();
+    });
+}
+
+function showPDFMessage() {
+    const message = document.createElement('div');
+    message.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--glass);
+        backdrop-filter: blur(20px);
+        padding: 1.5rem 2rem;
+        border-radius: 15px;
+        border: 1px solid var(--glass-border);
+        z-index: 10000;
+        font-weight: 600;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        color: var(--text-color);
+    `;
+    message.innerHTML = `
+        <div style="font-size: 1.2rem; margin-bottom: 0.5rem;">📄 PDF Resume Opened</div>
+        <div style="font-size: 0.9rem; opacity: 0.8;">
+            Use browser print (Ctrl+P) → "Save as PDF"<br>
+            Or download directly from the new tab
+        </div>
+    `;
+    
+    document.body.appendChild(message);
+    
+    setTimeout(() => {
+        message.style.opacity = '0';
+        message.style.transform = 'translate(-50%, -60%)';
         setTimeout(() => {
             message.remove();
-        }, 3000);
-    });
+        }, 300);
+    }, 3000);
 }
 
 // AI Chat Assistant
